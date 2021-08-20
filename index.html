@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fb_template</title>
+    <!--css file-->
+    <link rel="stylesheet" href="css/master.css">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!--start header-->
+    <div class="header">
+        <div class="box">
+            <div class="image">
+                <img src="images/logo.png" alt="">
+            </div>    
+            <i class="far fa-bell"></i>
+            <i class="far fa-envelope"></i>
+            <i class="far fa-play-circle"></i>
+        </div>
+        <div class="search">
+            <input type="search" name="" id="" placeholder="Search"> 
+            <div class="image">
+                <img onclick="prfunc()" class="rd" src="images/profile-pic.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--end header-->
+    <!--start profile-->
+    <div id="pr" style="display: none;" class="profile">
+        <div class="profile-img">
+            <div class="content">
+                <div class="image">
+                    <img class="rd" src="images/profile-pic.png" alt="">
+                </div>
+                <div class="text">
+                    <p class="bold">Jonh Nicholson</p>
+                    <a href="profile.html">See Your Profile</a>
+                </div>
+            </div>
+            <div class="dark-mode"></div>
+        </div>
+        <hr>
+        <div class="feed">
+            <div class="content">
+                <div class="icon">
+                    <i class="fas fa-comment-dots"></i>        
+                </div>
+                <div class="text">
+                    <p class="bold">Give Feedback</p>
+                    <a href="">Help us to improve the new degin</a>
+                </div>
+            </div> 
+        </div>
+        <hr>
+        <div class="setting">
+            <div class="box">
+                <div class="text">
+                    <i class="fas fa-cog"></i>
+                    <p>Settings & Privacy</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-chevron-right"></i>    
+                </div>
+            </div>
+            <div class="box">
+                <div class="text">
+                    <i class="fas fa-question-circle"></i>
+                    <p>Help & Support</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-chevron-right"></i>    
+                </div>
+            </div>
+            <div class="box">
+                <div class="text">
+                    <i class="fas fa-moon"></i>        
+                    <p>Display & Accessibility</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-chevron-right"></i>    
+                </div>
+            </div>
+            <div class="box">
+                <div class="text">
+                    <i class="fas fa-door-open"></i>
+                    <p class="tr">Logout</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-chevron-right"></i>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end profile-->
+    <i id="lricon" onclick="lr()" class="fas fa-bars"></i>
+    <!-- start left-section-->
+    <div id="ls" class="left-section">
+        <div class="box">
+            <i class="far fa-calendar"></i>
+            <p>Latest News</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-user-friends"></i>
+            <p>Friends</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-users"></i>
+            <p>Group</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-shopping-cart"></i>
+            <p>Marketplace</p>
+        </div>
+        <div class="box">
+            <i class="far fa-play-circle"></i>
+            <p>Watch</p>
+        </div>
+        <a href="">See More</a>
+        <hr>
+        <p class="bold">Your Shortcuts</p>
+        <div class="box">
+            <div class="image">
+                <img class="rd" src="images/shortcut-1.png" alt="">
+            </div>
+            <p>Web Developers</p>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img class="rd" src="images/shortcut-2.png" alt="">
+            </div>
+            <p>Web Design course</p>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img class="rd" src="images/shortcut-3.png" alt="">
+            </div>
+            <p>Full Stack Development</p>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img class="rd" src="images/shortcut-4.png" alt="">
+            </div>
+            <p>Websites Experts</p>
+        </div>
+    </div>
+    <!--end left-section -->
+    <!--start main-section-->
+    <div class="main-section">
+        <div class="story">
+            <div class="post_box">
+                <div class="image">
+                    <img src="images/status-1.png" alt="">
+                    <div class="content">
+                        <span>+</span>
+                        <p>Post Story</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/status-2.png" alt="">
+                    <div class="story-image">
+                        <img src="images/member-1.png" alt="">
+                    </div>
+                    <p>Alison</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/status-3.png" alt="">
+                    <div class="story-image">
+                        <img src="images/member-2.png" alt="">
+                    </div>
+                    <p>Jackson</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/status-4.png" alt="">
+                    <div class="story-image">
+                        <img src="images/member-3.png" alt="">
+                    </div>
+                    <p>Samona</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/status-5.png" alt="">
+                    <div class="story-image">
+                        <img src="images/member-4.png" alt="">
+                    </div>
+                    <p>John Deo</p>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="box">
+                <div class="image">
+                    <img class="rd" src="images/profile-pic.png" alt="">
+                </div>
+                <div class="content">
+                    <p class="bold">John Nicholson</p>
+                    <select name="" id="">
+                        <option value="">Public</option>
+                        <option value="">Book2</option>
+                        <option value="">Book3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="content">
+                <textarea name="" id="" placeholder="What's on your mind, John?"></textarea>
+                <div class="box">
+                    <i style="color: #f44336;" class="fas fa-video"></i>
+                    <p>Live Video</p>
+                </div>
+                <div class="box">
+                    <i style="color: #009688;" class="fas fa-camera"></i>
+                    <p>Photo/Video</p>
+                </div>
+                <div class="box">
+                    <i style="color: #ffeb3b;" class="far fa-laugh"></i>
+                    <p>Felling/Activity</p>
+                </div>
+            </div>
+        </div>
+        <div class="post-one">
+            <div class="content">
+                <div class="box">
+                    <div class="image">
+                        <img class="rd" src="images/profile-pic.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="bold">John Nicholson</p>
+                        <p>June 24 2021, 13:40 pm</p>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+            <p>Subscribe <span class="bold">@Easy Tutorials</span>YouTube channel to watch more video about websites development and UI design.</p>
+            <div class="image">
+                <img src="images/feed-image-1.png" alt="">
+            </div>
+            <div class="icon">
+                <div class="box">
+                    <i class="fas fa-thumbs-up"></i>
+                    <p>120</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-comment-alt"></i>                
+                    <p>45</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-share"></i>
+                    <p>20</p>
+                </div>
+            </div>
+        </div>
+        <div class="post-one">
+            <div class="content">
+                <div class="box">
+                    <div class="image">
+                        <img class="rd" src="images/profile-pic.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="bold">John Nicholson</p>
+                        <p>June 24 2021, 13:40 pm</p>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+            <p>Subscribe <span class="bold">@Easy Tutorials</span>YouTube channel to watch more video about websites development and UI design.</p>
+            <div class="image">
+                <img src="images/feed-image-2.png" alt="">
+            </div>
+            <div class="icon">
+                <div class="box">
+                    <i class="fas fa-thumbs-up"></i>
+                    <p>120</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-comment-alt"></i>                
+                    <p>45</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-share"></i>
+                    <p>20</p>
+                </div>
+            </div>
+        </div>
+        <div class="post-one">
+            <div class="content">
+                <div class="box">
+                    <div class="image">
+                        <img class="rd" src="images/profile-pic.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="bold">John Nicholson</p>
+                        <p>June 24 2021, 13:40 pm</p>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+            <p>Subscribe <span class="bold">@Easy Tutorials</span>YouTube channel to watch more video about websites development and UI design.</p>
+            <div class="image">
+                <img src="images/feed-image-3.png" alt="">
+            </div>
+            <div class="icon">
+                <div class="box">
+                    <i class="fas fa-thumbs-up"></i>
+                    <p>120</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-comment-alt"></i>                
+                    <p>45</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-share"></i>
+                    <p>20</p>
+                </div>
+            </div>
+        </div>
+        <div class="post-one">
+            <div class="content">
+                <div class="box">
+                    <div class="image">
+                        <img class="rd" src="images/profile-pic.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="bold">John Nicholson</p>
+                        <p>June 24 2021, 13:40 pm</p>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+            <p>Subscribe <span class="bold">@Easy Tutorials</span>YouTube channel to watch more video about websites development and UI design.</p>
+            <div class="image">
+                <img src="images/feed-image-4.png" alt="">
+            </div>
+            <div class="icon">
+                <div class="box">
+                    <i class="fas fa-thumbs-up"></i>
+                    <p>120</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-comment-alt"></i>                
+                    <p>45</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-share"></i>
+                    <p>20</p>
+                </div>
+            </div>
+        </div>
+        <div class="post-one">
+            <div class="content">
+                <div class="box">
+                    <div class="image">
+                        <img class="rd" src="images/profile-pic.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="bold">John Nicholson</p>
+                        <p>June 24 2021, 13:40 pm</p>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+            <p>Subscribe <span class="bold">@Easy Tutorials</span>YouTube channel to watch more video about websites development and UI design.</p>
+            <div class="image">
+                <img src="images/feed-image-5.png" alt="">
+            </div>
+            <div class="icon">
+                <div class="box">
+                    <i class="fas fa-thumbs-up"></i>
+                    <p>120</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-comment-alt"></i>                
+                    <p>45</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-share"></i>
+                    <p>20</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <button>load more</button>
+            <p>&copy;-copyright reserved to socailbook</p>
+        </div>
+    </div>
+    <!--end main-section-->
+    <!--start right-section-->
+    <div id="rs" class="right-section">
+        <div class="event">
+            <div class="text">
+                <p class="bold">Event</p>
+                <a href="">See All</a>    
+            </div>
+            <div class="box">
+                <div class="square">
+                    <p class="bold">18</p>
+                    <p>March</p>
+                </div>
+                <div class="content">
+                    <h4>Social Media</h4>
+                    <p>Willson Tech Park</p>
+                    <a href="">More Info</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="square">
+                    <p class="bold">22</p>
+                    <p>June</p>
+                </div>
+                <div class="content">
+                    <h4>Mobile Marketing</h4>
+                    <p>Willson Tech Park</p>
+                    <a href="">More Info</a>
+                </div>
+            </div>
+        </div>
+        <div class="adv">
+            <div class="text">
+                <p class="bold">Adventisement</p>
+                <a href="">Close</a>
+            </div>
+            <div class="image">
+                <img src="images/advertisement.png" alt="">
+            </div>
+        </div>
+        <div class="con">
+            <div class="text">
+                <p class="bold">Conversation</p>
+                <a href="">Hide Chat</a>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img class="rd" src="images/member-1.png" alt="">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img class="rd" src="images/member-2.png" alt="">
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img class="rd" src="images/member-3.png" alt="">
+                </div>
+                <p>Samona Rose</p>
+            </div>
+        </div>
+    </div>
+    <!--end right-section-->
+    <!--js file-->
+    <script src="js/json.js"></script>
+</body>
+</html>
