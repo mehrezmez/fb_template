@@ -14,9 +14,9 @@
     <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
+<body id="bd">
     <!--start header-->
-    <div class="header">
+    <div id="hd" class="header">
         <div class="box">
             <div class="image">
                 <img src="images/logo.png" alt="">
@@ -33,12 +33,81 @@
         </div>
     </div>
     <!--end header-->
+    <!--start profile-->
+    <div id="pr" style="display: none;" class="profile">
+        <div class="profile-img">
+            <div class="content">
+                <div class="image">
+                    <img class="rd" src="images/profile-pic.png" alt="">
+                </div>
+                <div class="text">
+                    <p class="bold">Jonh Nicholson</p>
+                    <a href="profile.html">See Your Profile</a>
+                </div>
+            </div>
+            <div onclick="dark()" id="divdr" class="dark-mode">
+                <div id="dr" style="left: 5px;" class="box"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="feed">
+            <div class="content">
+                <div class="icon">
+                    <i class="fas fa-comment-dots"></i>        
+                </div>
+                <div class="text">
+                    <p class="bold">Give Feedback</p>
+                    <a href="">Help us to improve the new degin</a>
+                </div>
+            </div> 
+        </div>
+        <hr>
+        <div class="setting">
+            <div class="box">
+                <div class="text">
+                    <i class="fas fa-cog"></i>
+                    <p>Settings & Privacy</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-chevron-right"></i>    
+                </div>
+            </div>
+            <div class="box">
+                <div class="text">
+                    <i class="fas fa-question-circle"></i>
+                    <p>Help & Support</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-chevron-right"></i>    
+                </div>
+            </div>
+            <div class="box">
+                <div class="text">
+                    <i class="fas fa-moon"></i>        
+                    <p>Display & Accessibility</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-chevron-right"></i>    
+                </div>
+            </div>
+            <div class="box">
+                <div class="text">
+                    <i class="fas fa-door-open"></i>
+                    <p class="tr">Logout</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-chevron-right"></i>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end profile-->
     <!--start container-->
     <div class="container">
         <div class="image">
             <img src="images/cover.png" alt="">
         </div>
-        <div class="head">
+        <div id="head" class="head">
             <div class="box">
                 <div class="image">
                     <img src="images/profile-pic.png" alt="">
@@ -77,7 +146,7 @@
             </div>
         </div>
         <div class="body">
-            <div class="intro">
+            <div id="int" class="intro">
                 <p class="bold">Intro</p>
                 <p>Belive in yourselfe and you can do unbelivable things.<i style="color: #ffeb3b;" class="far fa-laugh"></i></p>
                 <hr>
@@ -105,7 +174,7 @@
                 </div>
             </div>
             <div class="status">
-                <div class="post">
+                <div id="ps" class="post">
                     <div class="box">
                         <div class="image">
                             <img class="rd" src="images/profile-pic.png" alt="">
@@ -120,7 +189,7 @@
                         </div>
                     </div>
                     <div class="content">
-                        <textarea name="" id="" placeholder="What's on your mind, John?"></textarea>
+                        <textarea name="" id="txt" placeholder="What's on your mind, John?"></textarea>
                         <div class="box">
                             <i style="color: #f44336;" class="fas fa-video"></i>
                             <p>Live Video</p>
@@ -299,5 +368,7 @@
         </div>
     </div>
     <!--end container-->
+    <!--js file-->
+    <script src="js/json2.js"></script>
 </body>
 </html>

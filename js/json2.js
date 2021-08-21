@@ -1,13 +1,12 @@
 var x1 = document.getElementById("pr");
-var x2 = document.getElementById("rs");
-var x3 = document.getElementById("ls");
 var x4 = document.getElementById("dr");
 var x5 = document.getElementById("bd");
 var x6 = document.getElementById("ps");
 var x7 = document.getElementById("txt");
 var x9 = document.getElementById("hd");
 var x8 = document.getElementsByClassName("post-one");
-var x10 = document.getElementById("lricon");
+var x12 = document.getElementById("head");
+var x11 = document.getElementById("int");
 function prfunc() {
     if (x1.style.display == "none") {
         x1.style.display = "block";
@@ -42,9 +41,9 @@ function dark() {
         for (var i = 0; i < x8.length; i++) {
             x8[i].style.backgroundColor = "#222";
         }
-        x2.style.backgroundColor = "#222";
-        x3.style.backgroundColor = "#222";
-        x10.style.color = "white";   
+        x11.style.backgroundColor = "#222";
+        x12.style.backgroundColor = "#222";
+        
     }
     else {
         x4.style.left = "5px";
@@ -57,8 +56,8 @@ function dark() {
         for (var i = 0; i < x8.length; i++) {
             x8[i].style.backgroundColor = "white";
         }
-        x2.style.backgroundColor = "white";
-        x3.style.backgroundColor = "white";
-        x10.style.color = "black";
+        x11.style.backgroundColor = "white";
+        x12.style.backgroundColor = "white";
+        
     }
 }

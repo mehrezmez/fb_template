@@ -173,6 +173,100 @@ a {
     border: 2px solid white;
 }
 /*end header*/
+/*start profile*/
+.profile {
+    position: fixed;
+    width: calc(23% + 10px);
+    background-color: white;
+    right: 95px;
+    z-index: 2;
+    top: 67px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    border-radius: 10px;
+}
+@media (max-width: 991px) {
+    .profile {
+        width: 35%;
+        right: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .profile {
+        top: 98px;
+        z-index: 3;
+        width: 70%;
+        right: 20px;
+    }
+}
+.profile > *:not(hr) {
+    padding: 10px;
+}
+.profile a {
+    font-size: 14px;
+}
+.profile i:not(.setting .box .icon i) {
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    padding: 10px;
+    margin-right: 10px;
+}
+.profile .profile-img {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.profile .profile-img .dark-mode {
+    width: 40px;
+    height: 20px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    margin-right: 10px;
+    position: relative;
+}
+.profile .profile-img .dark-mode .box {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 2.5px;
+    background-color: white;
+    transition: 0.3s;
+}
+.profile .profile-img .content {
+    display: flex;
+}
+.profile .profile-img .content .image {
+    width: 40px;
+    margin-right: 10px;
+}
+.profile .feed .content {
+    display: flex;
+    align-items: center;
+}
+.profile .setting {
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+.profile .setting .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.profile .setting .box .text {
+    display: flex;
+    align-items: center;
+}
+.profile hr {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+/*end profile*/
 /*start container*/
 .head {
     background-color: white;
